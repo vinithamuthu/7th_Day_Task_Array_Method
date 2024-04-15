@@ -41,13 +41,10 @@ createreq2.onload = function () {
   // console.log(result2);
   console.log("2nd QUESTION OUTPUT");
 
-  let lakks = result2.filter((resul)=>{
+  let lakks = result2.filter((resul)=>resul.population < 200000)
 
-    return resul.population < 200000; 
-  
-  })
- 
-  console.log(lakks);
+  let lakrut = lakks.map((ele)=>console.log(ele.name.common))
+    
 
 }
 
